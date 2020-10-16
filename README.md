@@ -1,6 +1,6 @@
 # The microbiome associated with the reef builder Neogoniolithon sp. in the East Mediterranean
 
-This repository supports the submission of study *The microbiome associated with the reef builder Neogoniolithon sp. in the East Mediterranean*. We will provide code and data that was used to generate results and plots.
+This repository supports the submission of study **The microbiome associated with the reef builder** ***Neogoniolithon sp.*** **in the East Mediterranean**. We will provide code and data that was used to generate results and plots.
 
 ## Link to publication 
 
