@@ -22,7 +22,8 @@ The raw sequencing files are stored at ENA ...link...
 
 We are providing the code for the data processing and generation of many of the main figures. Please note: some plots were generated with the help of a R/Shiny app using the packages described in our publication. The app will be open-source and hopefully published soon (manuscript is in preparation). The code here is logically divided into different steps:
 
-* DADA2 
-* Data processing
-* NMDS
-* Alpha diversity
+* Adapter and quality trimming of the raw reads: adapter_quality_trimming.R
+* DADA2: dada2.R
+* Data processing: ...
+* NMDS: ...
+* Alpha diversity: alpha_diversity.R
