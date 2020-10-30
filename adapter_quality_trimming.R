@@ -27,20 +27,14 @@ if(outPath != '' && !dir.exists(outPath)){
 fnFs <- c()
 fnRs <- c()
 sample.names <- c()
-myLib <- c('spring2018','winter2017')
-inPath <- '/ARCHIV/Shany/'
-for(i in 1:length(myLib)){
-  path <- paste0(inPath,myLib[i])  
-  # Forward and reverse fastq filenames have format: SAMPLENAME_R1_001.fastq and SAMPLENAME_R2_001.fastq
-  fnFs_buff <- sort(list.files(path=path, pattern="R1_001.fastq", full.names = TRUE))
-  fnRs_buff <- sort(list.files(path=path, pattern="R2_001.fastq", full.names = TRUE))
-  fnFs <- c(fnFs,fnFs_buff)
-  fnRs <- c(fnRs,fnRs_buff)
-  # Extract sample names
-  sample.names <- c(sample.names,
-                    gsub("_L001_.+","",basename(fnFs_buff))
-  )
-}
+path <- '/rawdata'
+# Forward and reverse fastq filenames have format: SAMPLENAME_R1_001.fastq and SAMPLENAME_R2_001.fastq
+fnFs_buff <- sort(list.files(path=path, pattern="R1_001.fastq", full.names = TRUE))
+fnRs_buff <- sort(list.files(path=path, pattern="R2_001.fastq", full.names = TRUE))
+fnFs <- c(fnFs,fnFs_buff)
+fnRs <- c(fnRs,fnRs_buff)
+# Extract sample names
+sample.names <- gsub("_L001_.+","",basename(fnFs_buff))
 
 ### status
 print(paste0('  ',Sys.time()))
