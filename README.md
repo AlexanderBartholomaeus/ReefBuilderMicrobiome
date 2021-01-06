@@ -22,7 +22,7 @@ The data folder holds different data files:
 
 We are providing the code for the data processing and generation of many of the main figures. Please note: some plots were live in R using ggplot. The code presented here is logically divided into different steps:
 
-* Adapter and quality trimming of the raw reads: adapter_quality_trimming.R
+* Adapter and quality trimming of the raw reads: [adapter_quality_trimming.R](https://github.com/AlexanderBartholomaeus/ReefBuilderMicrobiome/blob/main/adapter_quality_trimming.R)
 * DADA2: [dada2.R](https://github.com/AlexanderBartholomaeus/ReefBuilderMicrobiome/blob/main/dada2.R)
 * Data processing: [process_data.R](https://github.com/AlexanderBartholomaeus/ReefBuilderMicrobiome/blob/main/process_data.R)
 * Alpha diversity: [alpha_diversity.R](https://github.com/AlexanderBartholomaeus/ReefBuilderMicrobiome/blob/main/alpha_diversity.R)
@@ -32,7 +32,7 @@ In the following subsection the different files will be shortly presented
 
 #### Adapter and quality trimming of the raw reads
 
-This [process_data.R](https://github.com/AlexanderBartholomaeus/ReefBuilderMicrobiome/blob/main/process_data.R) script uses the raw sequencing files (download [here](https://www.ebi.ac.uk/ena/browser/view/PRJEB38881)) and perfoms adapter and quality trimming including a minimal length filtering. To execute the [cutadapt](https://cutadapt.readthedocs.io/en/stable/) tool and the R package [seqRFLP](https://github.com/helixcn/seqRFLP) are required required.
+This [adapter_quality_trimming.R](https://github.com/AlexanderBartholomaeus/ReefBuilderMicrobiome/blob/main/adapter_quality_trimming.R) script uses the raw sequencing files (download [here](https://www.ebi.ac.uk/ena/browser/view/PRJEB38881)) and perfoms adapter and quality trimming including a minimal length filtering. To execute the [cutadapt](https://cutadapt.readthedocs.io/en/stable/) tool and the R package [seqRFLP](https://github.com/helixcn/seqRFLP) are required required.
 
 #### DADA2
 
