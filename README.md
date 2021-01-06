@@ -30,20 +30,20 @@ We are providing the code for the data processing and generation of many of the 
 
 In the following subsection the different files will be shortly presented
 
-#### adapter_quality_trimming.R
+#### Adapter and quality trimming of the raw reads
 
-This script uses the raw sequencing files (download [here](https://www.ebi.ac.uk/ena/browser/view/PRJEB38881)) and perfoms adapter and quality trimming including a minimal length filtering. To execute the [cutadapt](https://cutadapt.readthedocs.io/en/stable/) tool and the R package [seqRFLP](https://github.com/helixcn/seqRFLP) are required required.
+This [process_data.R](https://github.com/AlexanderBartholomaeus/ReefBuilderMicrobiome/blob/main/process_data.R) script uses the raw sequencing files (download [here](https://www.ebi.ac.uk/ena/browser/view/PRJEB38881)) and perfoms adapter and quality trimming including a minimal length filtering. To execute the [cutadapt](https://cutadapt.readthedocs.io/en/stable/) tool and the R package [seqRFLP](https://github.com/helixcn/seqRFLP) are required required.
 
 #### DADA2
 
 The [dada2.R](https://github.com/AlexanderBartholomaeus/ReefBuilderMicrobiome/blob/main/dada2.R) script uses the [DADA2](https://benjjneb.github.io/dada2/index.html) pipeline published in [nature methods](https://www.nature.com/articles/nmeth.3869) to generate Amplicon Sequence Variants (ASVs). In addition taxonomic assigment of the ASVs is done with SILVA 138. This results in a [ASV table](https://github.com/AlexanderBartholomaeus/ReefBuilderMicrobiome/blob/main/data/table_ASV.csv). The script requires R packages [dada2](https://benjjneb.github.io/dada2/dada-installation.html).
 
-#### process_data.R
+#### Data processing
 
 The [process_data.R](https://github.com/AlexanderBartholomaeus/ReefBuilderMicrobiome/blob/main/process_data.R) script removes chloroplast and mitochondria ASVs, generates [rarefied data](https://github.com/AlexanderBartholomaeus/ReefBuilderMicrobiome/blob/main/data/rarefied_3000.xlsx) and generates the [relative abundance data](https://github.com/AlexanderBartholomaeus/ReefBuilderMicrobiome/blob/main/data/rel_abundance.xlsx). 
 
 
-#### alpha_diversity.R
+#### Alpha diversity
 
 The [alpha_diversity.R](https://github.com/AlexanderBartholomaeus/ReefBuilderMicrobiome/blob/main/alpha_diversity.R) script uses rarefied data to generate alpha diversity plots and give statistical measures. [Lines 21-27](https://github.com/AlexanderBartholomaeus/ReefBuilderMicrobiome/blob/main/alpha_diversity.R#L21-L27) are outcommented as alpha diversity measures need to be calculated only once. Alpha diversity measures of each sample are available [here](https://github.com/AlexanderBartholomaeus/ReefBuilderMicrobiome/blob/main/data/alphaDiv_indices.xlsx). The script needs the R packages [readxl](https://readxl.tidyverse.org/), [writexl](https://github.com/ropensci/writexl), [ggplot2](https://ggplot2.tidyverse.org/), [phyloseq](https://joey711.github.io/phyloseq/), [vegan](https://github.com/vegandevs/vegan).
 
