@@ -23,10 +23,10 @@ The data folder holds different data files:
 We are providing the code for the data processing and generation of many of the main figures. Please note: some plots were live in R using ggplot. The code presented here is logically divided into different steps:
 
 * Adapter and quality trimming of the raw reads: adapter_quality_trimming.R
-* DADA2: dada2.R
-* Data processing: process_data.R
-* Alpha diversity: alpha_diversity.R
-* NMDS and bubbleplots: nmds_bubbleplot.R
+* DADA2: [dada2.R](https://github.com/AlexanderBartholomaeus/ReefBuilderMicrobiome/blob/main/dada2.R)
+* Data processing: [process_data.R](https://github.com/AlexanderBartholomaeus/ReefBuilderMicrobiome/blob/main/process_data.R)
+* Alpha diversity: [alpha_diversity.R](https://github.com/AlexanderBartholomaeus/ReefBuilderMicrobiome/blob/main/alpha_diversity.R)
+* NMDS and bubbleplots: [nmds_bubbleplot.R](https://github.com/AlexanderBartholomaeus/ReefBuilderMicrobiome/blob/main/nmds_bubbleplot.R)
 
 In the following subsection the different files will be shortly presented
 
