@@ -28,7 +28,7 @@ We are providing the code for the data processing and generation of many of the 
 * Alpha diversity: [alpha_diversity.R](https://github.com/AlexanderBartholomaeus/ReefBuilderMicrobiome/blob/main/alpha_diversity.R)
 * NMDS and bubbleplots: [nmds_bubbleplot.R](https://github.com/AlexanderBartholomaeus/ReefBuilderMicrobiome/blob/main/nmds_bubbleplot.R)
 
-In the following subsection the different files will be shortly presented
+In the following subsection the different files will be shortly explained.
 
 #### Adapter and quality trimming of the raw reads
 
